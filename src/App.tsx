@@ -10,7 +10,7 @@ export default function App() {
 
 <div className="w-[90%] mx-auto overflow-hidden ">
      <Routes>
-      <Route path="/" element={<MainHome />} />
+      <Route path="/" element={<MainHome/>} />
       {/* <Route path="/pricing" element={<Pricing />} /> */}
     </Routes>
  </div>
