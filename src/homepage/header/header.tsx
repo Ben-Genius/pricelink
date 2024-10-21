@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from 'lucide-react';
+import { Menu, X } from "lucide-react";
 
 interface NavList {
   label: string;
@@ -13,8 +13,8 @@ const Header: React.FC = () => {
 
   const navList: NavList[] = [
     { label: "Home", to: "/" },
-    { label: "Currency Converter", to: "/currencyConverter" },
-    { label: "Compare Prices", to: "/comparePrices" },
+    { label: "Currency Converter", to: "/converter" },
+    { label: "Compare Prices", to: "product" },
     { label: "Track Deal", to: "/trackDeal" },
   ];
 
@@ -22,14 +22,16 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80  backdrop-blur-md  shadow-lg lg:w-[60rem] w-full md:w[50rem] md:mx-auto lg:mx-auto rounded-full px-6 mt-2' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 mb-10 ${
+        isScrolled
+          ? "bg-white/80  backdrop-blur-md  shadow-lg lg:w-[60rem] w-full md:w[50rem] md:mx-auto lg:mx-auto rounded-full px-6 mt-6"
+          : "bg-transparent"
       }`}
     >
       <nav className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-4 ">

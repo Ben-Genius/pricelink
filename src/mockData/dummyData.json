@@ -1,0 +1,302 @@
+[
+  {
+      "id": 1,
+      "name": "iPhone 13 Pro",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-1.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-3.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-4.jpg"
+      ],
+      "price": 999.99,
+      "category": "Mobile Phones",
+      "description": "High-end smartphone with advanced camera system",
+      "rating": 4.8,
+      "totalReviews": 1587
+  },
+  {
+      "id": 2,
+      "name": "Samsung Galaxy S21",
+      "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-0.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-1.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-3.jpg"
+      ],
+      "price": 799.99,
+      "category": "Mobile Phones",
+      "description": "Flagship Android phone with 5G capabilities",
+      "rating": 4.7,
+      "totalReviews": 1420
+  },
+  {
+      "id": 3,
+      "name": "MacBook Pro 16-inch",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229",
+      "additionalImages": [
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202301_GEO_US?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-silver-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-silver-select-202301_GEO_US?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229"
+      ],
+      "price": 2399.99,
+      "category": "Laptops",
+      "description": "Powerful laptop for professionals with large Retina display",
+      "rating": 4.9,
+      "totalReviews": 1255
+  },
+  {
+      "id": 4,
+      "name": "Dell XPS 15",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/notebook-xps-15-9520-t-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=668&qlt=100,0&resMode=sharp2&size=668,402",
+      "additionalImages": [
+          "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/notebook-xps-15-9520-t-black-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=668&qlt=100,0&resMode=sharp2&size=668,402",
+          "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/notebook-xps-15-9520-t-black-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=668&qlt=100,0&resMode=sharp2&size=668,402",
+          "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/notebook-xps-15-9520-t-black-gallery-4.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=668&qlt=100,0&resMode=sharp2&size=668,402"
+      ],
+      "price": 1799.99,
+      "category": "Laptops",
+      "description": "Premium ultrabook with InfinityEdge display",
+      "rating": 4.6,
+      "totalReviews": 940
+  },
+  {
+      "id": 5,
+      "name": "Sony 65-inch 4K TV",
+      "image": "https://www.sony.com/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+      "additionalImages": [
+          "https://www.sony.com/image/5c483a3a3a2c78d5f6d9a3c2c7d9a3c2?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+          "https://www.sony.com/image/5c483a3a3a2c78d5f6d9a3c2c7d9a3c3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+          "https://www.sony.com/image/5c483a3a3a2c78d5f6d9a3c2c7d9a3c4?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF"
+      ],
+      "price": 1299.99,
+      "category": "Electronics",
+      "description": "Large 4K TV with vibrant colors and smart features",
+      "rating": 4.8,
+      "totalReviews": 2156
+  },
+  {
+      "id": 6,
+      "name": "Apple Watch Series 7",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKUQ3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171067000,1631661671000",
+      "additionalImages": [
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKUQ3_VW_PF+watch-45-alum-midnight-nc-7s_VW_PF_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171068000,1631661671000",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKUQ3_VW_TOP+watch-45-alum-midnight-nc-7s_VW_TOP_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171069000,1631661671000",
+          "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKUQ3_VW_SIDE+watch-45-alum-midnight-nc-7s_VW_SIDE_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171069000,1631661671000"
+      ],
+      "price": 399.99,
+      "category": "Gadgets",
+      "description": "Advanced smartwatch with health monitoring features",
+      "rating": 4.5,
+      "totalReviews": 1120
+  },
+  {
+      "id": 7,
+      "name": "Google Pixel 6",
+      "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-1.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-3.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-4.jpg"
+      ],
+      "price": 699.99,
+      "category": "Mobile Phones",
+      "description": "Android phone with excellent camera capabilities",
+      "rating": 4.7,
+      "totalReviews": 960
+  },
+  {
+      "id": 8,
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "image": "https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8Mjk3Njl8aW1hZ2UvcG5nfGg1Mi9oZWYvMTE0MzU1NDk1MjYwNDYucG5nfDQzNjE2NDgwNzc1NTU0OGE2MzZlZWUyNTA3OGM2ZDlhYzE1ZGEyNGJmZjkyYmUzZDViZjVjNzMzNjY3ZTI2NzE/lenovo-laptop-thinkpad-x1-carbon-gen9-14-subseries-hero.png",
+      "additionalImages": [
+          "https://p2-ofp.static.pub/fes/cms/2021/04/06/ys0esk1rjceng9zjr8sxoalznq4akx236261.png",
+          "https://p2-ofp.static.pub/fes/cms/2021/04/06/0bxc6qzfyepyg1zb6r7d3d1l2dkrjj236262.png",
+          "https://p3-ofp.static.pub/fes/cms/2021/04/06/zk7vxlzgvtpzgzk4v8zfzjzkvzkvjj236263.png"
+      ],
+      "price": 1499.99,
+      "category": "Laptops",
+      "description": "Lightweight business laptop with long battery life",
+      "rating": 4.4,
+      "totalReviews": 870
+  },
+  {
+      "id": 9,
+      "name": "Bose QuietComfort 45 Headphones",
+      "image": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc45/product_silo_images/QC45_PDP_HERO_1_RGB.png",
+      "additionalImages": [
+          "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc45/product_silo_images/QC45_PDP_HERO_2_RGB.png",
+          "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc45/product_silo_images/QC45_PDP_HERO_3_RGB.png",
+          "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc45/product_silo_images/QC45_PDP_HERO_4_RGB.png"
+      ],
+      "price": 329.99,
+      "category": "Electronics",
+      "description": "Noise-cancelling headphones with exceptional sound quality",
+      "rating": 4.7,
+      "totalReviews": 1340
+  },
+  {
+      "id": 10,
+      "name": "Fitbit Versa 3",
+      "image": "https://static-01.daraz.pk/p/cd1c9b4d9d8f9fd8b84b12d30c3c9a73.jpg",
+      "additionalImages": [
+          "https://static-01.daraz.pk/p/mdc/3f9f1f9f1f9f1f9f1f9f1f9f1f9f1f9f.jpg",
+          "https://static-01.daraz.pk/p/mdc/4f9f1f9f1f9f1f9f1f9f1f9f1f9f1f9f.jpg",
+          "https://static-01.daraz.pk/p/mdc/5f9f1f9f1f9f1f9f1f9f1f9f1f9f1f9f.jpg"
+      ],
+      "price": 229.99,
+      "category": "Gadgets",
+      "description": "Fitness smartwatch with built-in GPS",
+      "rating": 4.3,
+      "totalReviews": 620
+  },
+  {
+      "id": 11,
+      "name": "OnePlus 9 Pro",
+      "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-1.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-3.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-4.jpg"
+      ],
+      "price": 969.99,
+      "category": "Mobile Phones",
+      "description": "High-end Android phone with fast charging",
+      "rating": 4.6,
+      "totalReviews": 750
+  },
+  {
+      "id": 12,
+      "name": "ASUS ROG Zephyrus G14",
+      "image": "https://dlcdnwebimgs.asus.com/gain/C02A2103-8E6F-40E6-9F3A-A74A46968C8A/w1000/h732",
+      "additionalImages": [
+          "https://dlcdnwebimgs.asus.com/gain/6D5B6B67-8C27-4E7F-A744-1C0F659D1A7B/w1000/h732",
+          "https://dlcdnwebimgs.asus.com/gain/6D5B6B67-8C27-4E7F-A744-1C0F659D1A7B/w1000/h732",
+          "https://dlcdnwebimgs.asus.com/gain/6D5B6B67-8C27-4E7F-A744-1C0F659D1A7B/w1000/h732"
+      ],
+      "price": 1499.99,
+      "category": "Laptops",
+      "description": "Powerful gaming laptop in a compact form factor",
+      "rating": 4.7,
+      "totalReviews": 820
+  },
+  {
+      "id": 13,
+      "name": "LG OLED C1 Series TV",
+      "image": "https://www.lg.com/us/images/tvs/md07529865/gallery/desktop-01.jpg",
+      "additionalImages": [
+          "https://www.lg.com/us/images/tvs/md07529865/gallery/desktop-02.jpg",
+          "https://www.lg.com/us/images/tvs/md07529865/gallery/desktop-03.jpg",
+          "https://www.lg.com/us/images/tvs/md07529865/gallery/desktop-04.jpg"
+      ],
+      "price": 1799.99,
+      "category": "Electronics",
+      "description": "OLED TV with stunning picture quality",
+      "rating": 4.9,
+      "totalReviews": 1330
+  },
+  {
+      "id": 14,
+      "name": "DJI Mavic Air 2 Drone",
+      "image": "https://dji-official-fe.djicdn.com/cms/uploads/6fd6a5a6b601e4d7a2f5061e5bfc2e39.png",
+      "additionalImages": [
+          "https://dji-official-fe.djicdn.com/cms/uploads/7f2a2b8e3a6683e8c1f86c2b7cb3d828.png",
+          "https://dji-official-fe.djicdn.com/cms/uploads/75d9c2b67782e550e9e9f3db01a7e371.png",
+          "https://dji-official-fe.djicdn.com/cms/uploads/2e0a8d3a7e0a9e0a8d3a7e0a9e0a8d3a.png"
+      ],
+      "price": 799.99,
+      "category": "Gadgets",
+      "description": "Compact drone with 4K camera and long flight time",
+      "rating": 4.8,
+      "totalReviews": 940
+  },
+  {
+      "id": 15,
+      "name": "Xiaomi Mi 11",
+      "image": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi11-1.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi11-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi11-3.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi11-4.jpg"
+      ],
+      "price": 749.99,
+      "category": "Mobile Phones",
+      "description": "Feature-packed Android phone with high-resolution display",
+      "rating": 4.5,
+      "totalReviews": 680
+  },
+  {
+      "id": 16,
+      "name": "HP Spectre x360",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06618899.png",
+      "additionalImages": [
+          "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06618900.png",
+          "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06618901.png",
+          "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06618902.png"
+      ],
+      "price": 1299.99,
+      "category": "Laptops",
+      "description": "Versatile 2-in-1 laptop with premium design",
+      "rating": 4.6,
+      "totalReviews": 780
+  },
+  {
+      "id": 17,
+      "name": "Sony WH-1000XM4 Headphones",
+      "image": "https://www.sony.com/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+      "additionalImages": [
+          "https://www.sony.com/image/5d02da5df552836db894cead8a68f5f4?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+          "https://www.sony.com/image/5d02da5df552836db894cead8a68f5f5?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+          "https://www.sony.com/image/5d02da5df552836db894cead8a68f5f6?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF"
+      ],
+      "price": 349.99,
+      "category": "Electronics",
+      "description": "Industry-leading noise-cancelling headphones",
+      "rating": 4.9,
+      "totalReviews": 1850
+  },
+  {
+      "id": 18,
+      "name": "GoPro HERO10 Black",
+      "image": "https://gopro.com/content/dam/gopro/product-images/hero10-black/images/desktop/hero10-black-desktop-1.png",
+      "additionalImages": [
+          "https://gopro.com/content/dam/gopro/product-images/hero10-black/images/desktop/hero10-black-desktop-2.png",
+          "https://gopro.com/content/dam/gopro/product-images/hero10-black/images/desktop/hero10-black-desktop-3.png",
+          "https://gopro.com/content/dam/gopro/product-images/hero10-black/images/desktop/hero10-black-desktop-4.png"
+      ],
+      "price": 499.99,
+      "category": "Gadgets",
+      "description": "Advanced action camera with 5.3K video",
+      "rating": 4.8,
+      "totalReviews": 1250
+  },
+  {
+      "id": 19,
+      "name": "Motorola Edge+",
+      "image": "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-plus-1.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-plus-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-plus-3.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-plus-4.jpg"
+      ],
+      "price": 999.99,
+      "category": "Mobile Phones",
+      "description": "5G-enabled smartphone with curved display",
+      "rating": 4.6,
+      "totalReviews": 740
+  },
+  {
+      "id": 20,
+      "name": "Microsoft Surface Laptop 4",
+      "image": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LqQX?ver=fe80&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true",
+      "additionalImages": [
+          "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LqQY?ver=fe80&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true",
+          "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LqQZ?ver=fe80&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true",
+          "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LqR0?ver=fe80&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true"
+      ],
+      "price": 1299.99,
+      "category": "Laptops",
+      "description": "Sleek and powerful laptop with long battery life",
+      "rating": 4.7,
+      "totalReviews": 830
+  }
+]

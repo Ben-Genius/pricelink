@@ -4,6 +4,7 @@ const MainHome = () => {
   return (
     <div>
       <Landing/>
+    
     </div>
   )
 }

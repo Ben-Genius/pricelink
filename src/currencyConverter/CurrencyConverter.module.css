@@ -1,0 +1,230 @@
+.converterBackground {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e6e9ec, #f3f4f5, #fdfefe);
+    background-size: cover;
+    position: relative;
+}
+
+/* Nav bar start */
+
+
+/* Navbar links */
+.navbar {
+    width: 100%;
+    padding: 5px 10px; /* Padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Space between the left and right sections */
+    align-items: center;
+    position: fixed; /* Stick to the top of the page */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure it's above everything else */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: top 0.3s ease-in-out; /* Smooth transition for hiding */
+}
+
+
+/* Hide navbar by moving it upwards */
+.hide {
+    top: -100px; /* Move the navbar upwards when hidden */
+}
+
+
+/* Left section: Price Link */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Right section: Navigation links */
+.navLinks {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Add space between the links */
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect for nav items */
+.navItem:hover {
+    color: #f1c40f; /* Change color on hover */
+}
+
+/* Nav bar end */
+
+
+
+.bubble {
+    position: absolute;
+    top: 0; /* Align at the top */
+    width: 180%; /* Full width */
+    height: 250%; /* Adjust height to avoid overflow */
+    background-color: #080c7b; /* Dark purple-blue */
+    z-index: 0; /* Below the converter card */
+    overflow: hidden; /* Prevent inner overflow */
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Align curve slightly below */
+  width: 100%;
+  height: 85%; /* Adjust curve depth */
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  background: linear-gradient(135deg, #ffffff, #f3f4f5, #ffffff); /* Light gradient */
+   /* Behind bubble */
+}
+
+
+
+.converterCard {
+    top: 80px;
+    
+    width: 100%; /* Wider card for longer currency names */
+    max-width: 1200px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    position: absolute;
+    top: 100px;
+    font-weight:bolder;
+    font-size:250%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    z-index: 0;
+}
+
+.subtitle {
+    top: 130px;
+    color: #ffffff;
+    z-index: 0;
+}
+
+
+.input {
+    height: 55px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.swapButton {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+/* for button */
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+.convertButton {
+    width: 15%; /* Make the button full width */
+    height: 50px; /* Adjust height for better usability */
+    background: linear-gradient(135deg, #0a1bda, #280888); /* Smooth gradient background */
+    color: white; /* Text color */
+    font-size: 1.3rem; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    border: none; /* Remove borders */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth animation on hover */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+/* Add a hover effect */
+.convertButton:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Disabled state styling */
+.convertButton:disabled {
+    background: #ccc; /* Grey background for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor */
+    box-shadow: none; /* No shadow for disabled button */
+}
+  
+
+.mockConversion {
+    display: flex;
+    z-index: 0;
+}
+  
+.icon {
+    font-size: 15px; /* Icon size */
+    margin-right: 2px; /* Add space between the icon and text */
+    color: #000000; /* Icon color */
+}
+
+
+
+/* Container for the four boxes */
+.boxContainer {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 15px; 
+    border-color: #e6e9ec;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* background: linear-gradient(135deg, #e6e9ec, #f3f4f5, #e6e9ec); */
+    height: 50px;
+}
+  
+
+
+/* Individual box styles */
+.box {
+    flex: 1; /* Make all boxes the same size */
+    max-width: 270px;
+    height: 35px;
+     /* Box background color */
+    color: rgb(38, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 40px;
+     /* Add a subtle shadow */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for the boxes */
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(92, 91, 91, 0.2);
+    color: linear-gradient(135deg, #e6e9ec, #f3f4f5, #fdfefe);;
+}
