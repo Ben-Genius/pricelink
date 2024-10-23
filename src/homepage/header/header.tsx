@@ -15,7 +15,9 @@ const Header: React.FC = () => {
     { label: "Home", to: "/" },
     { label: "Currency Converter", to: "/converter" },
     { label: "Compare Prices", to: "product" },
-    { label: "Track Deal", to: "/trackDeal" },
+    { label: "About Us", to: "about-us" },
+    { label: "Contact Us", to: "contact-us" },
+    // { label: "Track Deal", to: "/trackDeal" },
   ];
 
   useEffect(() => {

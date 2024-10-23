@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom';
 import { Star, Truck, RotateCcw, ShieldCheck, ChevronLeft, ChevronRight } from 'lucide-react';
 import dummyData from '../mockData/dummyData.json';
 import AmazonLogo from "../assets/amazon.png";
-import AliExpressLogo from "../assets/aliExpress.png";
+// import AliExpressLogo from "../assets/aliExpress.png";
 import EbayLogo from "../assets/ebay.png";
-import FlipkartLogo from "../assets/flipkart.png";
-import WalmartLogo from "../assets/walmart.png";
+// import FlipkartLogo from "../assets/flipkart.png";
+// import WalmartLogo from "../assets/walmart.png";
 
 const platforms = [
     {
@@ -23,20 +23,20 @@ const platforms = [
       inStock: true,
       returnPolicy: "30-days no charge on returns",
     },
-    {
-      name: "Walmart",
-      logo: WalmartLogo,
-      basePrice: 2400,
-      delivery: 25,
-      estimatedTax: 97,
-      totalPrice: 2522,
-      rating: 4.7,
-      shipping: "$25",
-      deliveryTime: "2-3 Days",
-      reviews: 6843,
-      inStock: true,
-      returnPolicy: "30-days no charge on returns",
-    },
+    // {
+    //   name: "Walmart",
+    //   logo: WalmartLogo,
+    //   basePrice: 2400,
+    //   delivery: 25,
+    //   estimatedTax: 97,
+    //   totalPrice: 2522,
+    //   rating: 4.7,
+    //   shipping: "$25",
+    //   deliveryTime: "2-3 Days",
+    //   reviews: 6843,
+    //   inStock: true,
+    //   returnPolicy: "30-days no charge on returns",
+    // },
     {
       name: "Ebay",
       logo: EbayLogo,
@@ -51,34 +51,34 @@ const platforms = [
       inStock: false,
       returnPolicy: "Free 30-days return",
     },
-    {
-      name: "AliExpress",
-      logo: AliExpressLogo,
-      basePrice: 2300,
-      delivery: 30,
-      estimatedTax: 95,
-      totalPrice: 2425,
-      rating: 4.5,
-      shipping: "$30",
-      deliveryTime: "5-7 Days",
-      reviews: 5102,
-      inStock: true,
-      returnPolicy: "30-days no charge on returns",
-    },
-    {
-      name: "Flipkart",
-      logo: FlipkartLogo,
-      basePrice: 2400,
-      delivery: 15,
-      estimatedTax: 98,
-      totalPrice: 2513,
-      rating: 4.7,
-      shipping: "$15",
-      deliveryTime: "3-4 Days",
-      reviews: 7294,
-      inStock: true,
-      returnPolicy: "15-days return policy",
-    },
+    // {
+    //   name: "AliExpress",
+    //   logo: AliExpressLogo,
+    //   basePrice: 2300,
+    //   delivery: 30,
+    //   estimatedTax: 95,
+    //   totalPrice: 2425,
+    //   rating: 4.5,
+    //   shipping: "$30",
+    //   deliveryTime: "5-7 Days",
+    //   reviews: 5102,
+    //   inStock: true,
+    //   returnPolicy: "30-days no charge on returns",
+    // },
+    // {
+    //   name: "Flipkart",
+    //   logo: FlipkartLogo,
+    //   basePrice: 2400,
+    //   delivery: 15,
+    //   estimatedTax: 98,
+    //   totalPrice: 2513,
+    //   rating: 4.7,
+    //   shipping: "$15",
+    //   deliveryTime: "3-4 Days",
+    //   reviews: 7294,
+    //   inStock: true,
+    //   returnPolicy: "15-days return policy",
+    // },
   ];
   
 
@@ -206,18 +206,20 @@ export default function ProductDetail() {
         <div className="mt-10 mb-10 max-w-full w-[75rem] mx-auto">
              
       
-             <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 whitespace-nowrap items-center">
-             <h2 className="text-sm font-medium text-gray-900">Available on : </h2>
-               {platforms.map((platform) => (
-                 <div
-                   key={platform.name}
-                   className="relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 "
-                 >
-                   <img src={platform.logo} alt={platform.name} className="w-full h-8 object-contain" />
-                   <span className="sr-only">{platform.name}</span>
-                 </div>
-               ))}
-             </div>
+      <div className='items-center justify-center flex flex-col md:flex-row  w-full max-w-full lg:mx-72'>
+      <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-6 whitespace-nowrap items-center justify-items-center text-center w-full">
+    <h2 className="text-sm font-medium text-gray-900">Available on : </h2>
+    {platforms.map((platform) => (
+      <div
+        key={platform.name}
+        className="relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 w-full"
+      >
+        <img src={platform.logo} alt={platform.name} className="w-full h-8 object-contain" />
+        <span className="sr-only">{platform.name}</span>
+      </div>
+    ))}
+  </div>
+      </div>
            </div>
           <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
             <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">

@@ -4,10 +4,10 @@ import dummyData from "../../mockData/dummyData.json";
 import { useNavigate } from "react-router-dom";
 // Import Platform Logos
 import AmazonLogo from "../../assets/amazon.png";
-import AliExpressLogo from "../../assets/aliExpress.png";
+// import AliExpressLogo from "../../assets/aliExpress.png";
 import EbayLogo from "../../assets/ebay.png";
-import FlipkartLogo from "../../assets/flipkart.png";
-import WalmartLogo from "../../assets/walmart.png";
+// import FlipkartLogo from "../../assets/flipkart.png";
+// import WalmartLogo from "../../assets/walmart.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -96,8 +96,10 @@ const Landing: React.FC = () => {
             <label className="relative inline-flex items-center cursor-pointer">
               <input
                 type="checkbox"
-                checked={!isLocalShopping}
-                onChange={() => setIsLocalShopping(!isLocalShopping)}
+                // checked={!isLocalShopping}
+                checked={isLocalShopping}
+
+                // onChange={() => setIsLocalShopping(!isLocalShopping)}
                 className="sr-only peer"
               />
               <div className="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-purpleCustom"></div>
@@ -233,10 +235,10 @@ const Landing: React.FC = () => {
           <div className="flex flex-wrap justify-center items-center gap-8 mb-12">
             {[
               AmazonLogo,
-              AliExpressLogo,
+              // AliExpressLogo,
               EbayLogo,
-              FlipkartLogo,
-              WalmartLogo,
+              // FlipkartLogo,
+              // WalmartLogo,
             ].map((logo, index) => (
               <img
                 key={index}
@@ -248,7 +250,7 @@ const Landing: React.FC = () => {
           </div>
         )}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <FeatureCard
             title="Compare Prices"
             description={`Find the best deals across multiple ${
@@ -269,16 +271,18 @@ const Landing: React.FC = () => {
             route="/trackDeals"
             icon={<TrainTrack size={24} />}
           />
-        </div>
+        </div> */}
 
         <div className="flex space-x-4 items-center justify-center mb-12">
-          <button
+        <Link to='/product'>
+        <button
             type="submit"
-            className="bg-purpleCustom text-white px-4 py-3 rounded-md text-md  hover:bg-purpleLight transition-all duration-300 transform  focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50  "
+            className="bg-purpleCustom/90 text-white px-4 py-3 rounded-md text-md  hover:bg-purpleCustom transition-all duration-300 transform  focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50  ,"
           >
             Compare Prices
           </button>
-          <button className="bg-black text-white hover:text-black px-4 py-3 rounded-md text-md  hover:bg-white transition-all duration-300 transform  focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50  ">
+        </Link>
+          <button className="bg-black text-white hover:text-white px-4 py-3 rounded-md text-md  hover:bg-gray-800 transition-all duration-300 transform  focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50  ">
             Track Prices
           </button>
         </div>

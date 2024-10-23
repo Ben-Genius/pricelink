@@ -6,6 +6,7 @@ import ProductDetail from "./productDetail/mainProduct";
 import CurrencyConverter from "./currencyConverter/mainCurrencyConverter";
 import "./App.css";
 import Footer from "./homepage/footer/footer";
+import ContactUs from "./homepage/aboutUs/aboutUs";
 
 export default function App() {
   return (
@@ -15,6 +16,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MainHome />} />
           <Route path="product" element={<SearchResults />} />
+          <Route path="contact-us" element={<ContactUs />} />
+          {/* <Route path="product" element={<SearchResults />} /> */}
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/converter" element={<CurrencyConverter />} />
         </Routes>
