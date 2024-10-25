@@ -3,25 +3,25 @@ import { Link } from "react-router-dom"
 import { JSX } from "react/jsx-runtime"
 
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
+  // solutions: [
+  //   { name: 'Marketing', href: '#' },
+  //   { name: 'Analytics', href: '#' },
 
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
+  // ],
+  // support: [
+  //   { name: 'Pricing', href: '#' },
+  //   { name: 'Documentation', href: '#' },
 
-  ],
+  // ],
   company: [
     { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
+    // { name: 'Blog', href: '#' },
  
   ],
   legal: [
  
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: 'Privacy & Terms', href: '#' },
+    // { name: 'Terms', href: '#' },
   ],
   social: [
     {
@@ -115,31 +115,6 @@ export default function Footer() {
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 text-black">
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-purpleCustom">Solutions</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-black-300 hover:text-purpleCustom">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-purpleCustom">Support</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-black hover:text-purpleCustom">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-purpleCustom">Company</h3>
@@ -153,7 +128,9 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 md:mt-0">
+           
+            </div>
+            <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-purpleCustom">Legal</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
@@ -165,11 +142,36 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
+              {/* <div>
+                <h3 className="text-sm font-semibold leading-6 text-purpleCustom">Solutions</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.solutions.map((item) => (
+                    <li key={item.name}>
+                      <a href={item.href} className="text-sm leading-6 text-black-300 hover:text-purpleCustom">
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div> */}
+              {/* <div className="mt-10 md:mt-0">
+                <h3 className="text-sm font-semibold leading-6 text-purpleCustom">Support</h3>
+                <ul role="list" className="mt-6 space-y-4">
+                  {navigation.support.map((item) => (
+                    <li key={item.name}>
+                      <a href={item.href} className="text-sm leading-6 text-black hover:text-purpleCustom">
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div> */}
             </div>
+         
           </div>
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-10">
-          <p className="text-xs leading-5 text-black">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+          <p className="text-xs leading-5 text-black">&copy; 2024 Your Company, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -13,9 +13,9 @@ const Header: React.FC = () => {
 
   const navList: NavList[] = [
     { label: "Home", to: "/" },
-    { label: "Currency Converter", to: "/converter" },
     { label: "Compare Prices", to: "product" },
-    { label: "About Us", to: "about-us" },
+    { label: "Currency Converter", to: "/converter" },
+    // { label: "About Us", to: "about-us" },
     { label: "Contact Us", to: "contact-us" },
     // { label: "Track Deal", to: "/trackDeal" },
   ];

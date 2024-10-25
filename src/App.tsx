@@ -6,18 +6,18 @@ import ProductDetail from "./productDetail/mainProduct";
 import CurrencyConverter from "./currencyConverter/mainCurrencyConverter";
 import "./App.css";
 import Footer from "./homepage/footer/footer";
-import ContactUs from "./homepage/aboutUs/aboutUs";
+import ContactUs from "./homepage/contactUs/contactUs";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-50 ">
+    <div className="min-h-screen bg-gradient-to-r from-purple-50 to-purple-50">
       <Header />
-      <div className="w-[90%] mx-auto overflow-hidden ">
+      <div className="max-w-full w-[92%] mx-auto overflow-hidden h-full">
         <Routes>
           <Route path="/" element={<MainHome />} />
           <Route path="product" element={<SearchResults />} />
           <Route path="contact-us" element={<ContactUs />} />
-          {/* <Route path="product" element={<SearchResults />} /> */}
+          {/* <Route path="product" element={<AboutUs />} /> */}
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/converter" element={<CurrencyConverter />} />
         </Routes>

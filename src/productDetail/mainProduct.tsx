@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Star, Truck, RotateCcw, ShieldCheck, ChevronLeft, ChevronRight } from 'lucide-react';
 import dummyData from '../mockData/dummyData.json';
 import AmazonLogo from "../assets/amazon.png";
@@ -110,7 +110,7 @@ export default function ProductDetail() {
               <img
                 src={images[currentImageIndex]}
                 alt={product.name}
-                className="h-full w-full object-cover object-center sm:rounded-lg"
+                className="h-full w-full object-contain object-center sm:rounded-lg mix-blend-multiply"
               />
             </div>
             <button
@@ -142,11 +142,11 @@ export default function ProductDetail() {
               <h3 className="sr-only">Reviews</h3>
               <div className="flex items-center">
                 <div className="flex items-center">
-                  {[0, 1, 2, 3, 4, 5].map((rating) => (
+                  {[0, 1, 2, 3, 4, 5,].map((rating) => (
                     <Star
                       key={rating}
-                      className={`h-5 w-5 flex-shrink-0 ${
-                        product.rating > rating ? 'text-yellow-400' : 'text-gray-300'
+                      className={`h-5 w-5 flex-shrink-0  fill-current ${
+                        product.rating > rating ? 'text-yellow-500' : 'text-gray-300'
                       }`}
                       aria-hidden="true"
                     />
@@ -210,15 +210,18 @@ export default function ProductDetail() {
       <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-6 whitespace-nowrap items-center justify-items-center text-center w-full">
     <h2 className="text-sm font-medium text-gray-900">Available on : </h2>
     {platforms.map((platform) => (
-      <div
+      <Link
         key={platform.name}
-        className="relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 w-full"
+        to={platform.name === "Amazon" ? product.amazonLink || "#" : platform.name === "Ebay" ? "https://www.ebay.com/sch/" + encodeURIComponent(product.name) : "#"}
+        // target="_blank"
+        className="relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 w-full hover:shadow-xl"
       >
-        <img src={platform.logo} alt={platform.name} className="w-full h-8 object-contain" />
-        <span className="sr-only">{platform.name}</span>
-      </div>
-    ))}
-  </div>
+        <div>
+          <img src={platform.logo} alt={platform.name} className="w-full h-8 object-contain" />
+          <span className="sr-only">{platform.name}</span>
+        </div>
+      </Link>
+    ))}  </div>
       </div>
            </div>
           <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
@@ -333,6 +336,13 @@ export default function ProductDetail() {
                       </td>
                       <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                         {platform.returnPolicy}
+                      </td>
+                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                        <Link to=''>
+                          <button className="bg-purpleCustom/90 hover:bg-purpleCustom text-white font-bold py-2 px-4 rounded">
+                            Buy Now
+                          </button>
+                        </Link>
                       </td>
                     </tr>
                   ))}
