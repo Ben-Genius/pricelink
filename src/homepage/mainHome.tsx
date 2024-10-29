@@ -4,31 +4,61 @@ import {
   Globe,
   Bell,
   Mail,
-  ArrowRight
+  ArrowRight,
+  Truck,
+  Star,
+  User
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react'
+import { motion } from 'framer-motion';
 
 const features = [
   {
-    name: 'Cross-border Price Comparison',
+    name: 'Seamless Price Comparison',
     description:
-      'Compare product prices across different countries and platforms effortlessly.',
+      'Compare prices across leading online retailers like Amazon, Walmart, eBay, and more.',
     icon: Globe,
   },
   {
     name: 'Real-time Currency Conversion',
     description:
-      'View prices in your preferred currency with up-to-date exchange rates.',
+      'Convert currencies in real-time to see prices in your preferred currency.',
     icon: DollarSign,
   },
   {
-    name: 'Affiliate Links',
+    name: 'Reliable Shipping Estimates',
     description:
-      'Support us by shopping through our affiliate links at no extra cost.',
-    icon: LinkIcon,
+      'Get accurate shipping cost estimates to your location.',
+    icon: Truck, // Ensure you have this icon imported
+  },
+  {
+    name: 'Product Reviews',
+    description:
+      'Access product reviews to make informed purchasing decisions.',
+    icon: Star, // Ensure you have this icon imported
+  },
+  {
+    name: 'Intuitive Interface',
+    description:
+      'Our user-friendly platform makes shopping and comparing prices easy.',
+    icon: User, // Replace with an appropriate icon
   },
 ];
+
+const fadeInUp = {
+  initial: { y: 20, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
 
 export default function MainHome() {
 
@@ -43,11 +73,12 @@ export default function MainHome() {
     setTimeout(() => setIsSubscribed(false), 3000) // Reset after 3 seconds
   }
   return (
-    <div className="bg-transparent">
-
+    <div className="bg-transparent pt-3 sm:pt-0">
       {/* Hero Section */}
       <main>
+        
       <div className="relative isolate">
+        
           <svg
             aria-hidden="true"
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
@@ -84,76 +115,96 @@ export default function MainHome() {
               className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-purpleCustom opacity-10 "
             />
           </div>
+          
           <div className="overflow-hidden">
+    
+
             <div className="mx-auto max-w-7xl px-6 pb-16 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+              
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-                  Shop Smarter, Save More with PriceLink
-                  </h1>
-                  <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                  Discover the best deals from around the world. PriceLink
-                    compares prices across countries and platforms, ensuring you
-                    always get the best value for your purchases.
-                  </p>
-                  <div className="mt-10 flex items-center gap-x-6">
-                    <Link
-                      to="product"
-                      className="rounded-md bg-purpleCustom/90 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purpleCustom focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Get started
-                    </Link>
-                
-                  </div>
+                <motion.h1
+                    variants={fadeInUp}
+                    initial="initial"
+                    animate="animate"
+                    transition={{ duration: 0.6 }}
+                    className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl"
+                  >
+                  Discover the Best Prices Across Platforms with <span className='text-purpleCustom'>Price</span>Link
+                  </motion.h1>
+                  <motion.p variants={fadeInUp}
+                    initial="initial"
+                    animate="animate"
+                    transition={{ duration: 0.8 }}
+                     className="mt-8 text-pretty text-lg font-light text-gray-800 sm:max-w-md  lg:max-w-none">
+  Welcome to PriceLink, your go-to platform for seamless price comparison across leading online retailers like <b className='text-purpleCustom'>Amazon</b>, <b>Walmart</b>, <b className='text-purpleCustom'>eBay</b>, and more. Whether you're shopping locally or exploring cross-border deals, <b className='text-purpleCustom'>Price</b>Link ensures you never miss out on the best offers.
+  Explore our vision for the future of smart shopping. While purchases aren't available yet, you can preview how PriceLink will help you discover the best deals worldwide.
+
+</motion.p>
+<motion.div variants={fadeInUp}
+                    initial="initial"
+                    animate="animate"
+                    transition={{ duration: 1 }}
+                     className="mt-10 flex items-center gap-x-6">
+  <Link
+    to="product"
+    className="rounded-md bg-purpleCustom/90 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purpleCustom focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+  >
+    Start Comparing
+  </Link>
+</motion.div>
                 </div>
-                <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0 w-full ">
+                <motion.div  variants={staggerContainer}
+                  initial="initial"
+                  animate="animate"
+                   className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0 w-full ">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 lg:-m-6">
-                    <div className="relative">
+                    <motion.div variants={fadeInUp} className="relative">
                       <img
                         alt=""
                         src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
+                    </motion.div>
                   </div>
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                    <div className="relative">
+                    <motion.div variants={fadeInUp} className="relative">
                       <img
                         alt=""
                         src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                    <div className="relative">
+                    </motion.div>
+                    <motion.div variants={fadeInUp} className="relative">
                       <img
                         alt=""
                         src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
+                    </motion.div>
                   </div>
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                    <div className="relative">
+                    <motion.div variants={fadeInUp} className="relative">
                       <img
                         alt=""
                         src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 " />
-                    </div>
-                    <div className="relative">
+                    </motion.div>
+                    <motion.div variants={fadeInUp} className="relative">
                       <img
                         alt=""
                         src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
+                    </motion.div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -162,18 +213,38 @@ export default function MainHome() {
         {/* Features Section */}
         <div className="mx-auto  max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">Why PriceLink?</h2>
-            <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+            <motion.h2
+              variants={fadeInUp}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.6 }} className="text-base font-semibold leading-7 text-indigo-600">Why PriceLink?</motion.h2>
+            <motion.p
+              variants={fadeInUp}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.8 }} className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
               Discover the Best Deals Worldwide
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            </motion.p>
+            <motion.p
+              variants={fadeInUp}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 1 }} 
+               className="mt-6 text-lg leading-8 text-gray-600">
               PriceLink helps you find the best prices by comparing products across multiple platforms and countries. Enjoy real-time currency conversions and save on your purchases.
-            </p>
+            </motion.p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+            <motion.dl
+              variants={staggerContainer}
+              initial="initial"
+              animate="animate"
+               className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {features.map((feature) => (
-                <div key={feature.name} className="flex flex-col">
+                <motion.div
+              
+                variants={fadeInUp}
+                 key={feature.name} className="flex flex-col">
                   <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                     <feature.icon aria-hidden="true" className="h-6 w-6 flex-none text-indigo-600" />
                     {feature.name}
@@ -181,9 +252,9 @@ export default function MainHome() {
                   <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                     <p className="flex-auto">{feature.description}</p>
                   </dd>
-                </div>
+                </motion.div>
               ))}
-            </dl>
+            </motion.dl>
           </div>
         </div>
 

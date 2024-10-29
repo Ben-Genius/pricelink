@@ -12,7 +12,8 @@
       "category": "Mobile Phones",
       "description": "High-end smartphone with advanced camera system",
       "rating": 6,
-      "totalReviews": 1587
+      "totalReviews": 1587,
+      "amazonLink":"https://www.amazon.com/Apple-iPhone-13-Pro-Sierra/dp/B09LPB9SQH?th=1"
   },
   {
       "id": 2,
@@ -48,39 +49,8 @@
       "amazonLink": "https://www.amazon.com/Apple-MacBook-16-inch-10%E2%80%91core-16%E2%80%91core/dp/B09JQKBQSB/"
 
   },
-  {
-      "id": 4,
-      "name": "Dell XPS 15",
-      "image": "https://m.media-amazon.com/images/I/61OpIsVM7CL._AC_SX679_.jpg",
-      "additionalImages": [
-          "https://m.media-amazon.com/images/I/61biXnw-M1L._AC_SX679_.jpg",
-          "https://m.media-amazon.com/images/I/81PKghW5F7L._AC_SX679_.jpg",
-          "https://m.media-amazon.com/images/I/61hl+QVWAfL._AC_SX679_.jpg"
-      ],      "price": 1799.99,
-      "category": "Laptops",
-      "description": "Premium ultrabook with InfinityEdge display",
-      "rating": 4.6,
-      "totalReviews": 940,
-      "amazonLink": "https://www.amazon.com/Dell-XPS-15-9520-i7-12700H/dp/B09WHM8Q9X/"
 
-  },
-  {
-      "id": 5,
-      "name": "Sony 65-inch 4K TV",
-      "image": "https://telefonika.com/wp-content/uploads/2021/04/Sony-KD-65X9000H-Smart-TV-Android-TV-65-inch-Full-Array-LED-4K-Ultra-HD.jpg",
-      "additionalImages": [
-          "https://telefonika.com/wp-content/uploads/2021/06/SONY-LCD-KD-85X80L-AF-600x600.jpg",
-          "https://telefonika.com/wp-content/uploads/2021/04/Sony-LED-KD-65X81J-RU3-LCD-TV-65inch-600x600.jpg",
-          "https://m.media-amazon.com/images/I/81P6YFm57TL.jpg"
-      ],
-      "price": 1299.99,
-      "category": "Electronics",
-      "description": "Large 4K TV with vibrant colors and smart features",
-      "rating": 4.8,
-      "totalReviews": 2156,
-      "amazonLink": "https://www.amazon.com/SONY-65-inch-Ultra-X90K-Series/dp/B09QKNG4VY/"
-
-  },
+  
   {
       "id": 6,
       "name": "Apple Watch Series 7",
@@ -115,23 +85,7 @@
       "amazonLink": "https://www.amazon.com/Google-Pixel-6-5G-Android-Phone/dp/B09HJZPFDD/"
       
   },
-  {
-      "id": 8,
-      "name": "Lenovo ThinkPad X1 Carbon",
-      "image":"https://m.media-amazon.com/images/I/61XXyxsfdRL.__AC_SY300_SX300_QL70_FMwebp_.jpg",
-      "additionalImages": [
-          "https://m.media-amazon.com/images/I/616lsDxAaCL._AC_SX679_.jpg",
-          "https://m.media-amazon.com/images/I/419j8hrNd0L._AC_SX679_.jpg",
-          "https://m.media-amazon.com/images/I/61z0CIA8JKL._AC_SL1500_.jpg"
-      ],
-      "price": 1499.99,
-      "category": "Laptops",
-      "description": "Lightweight business laptop with long battery life",
-      "rating": 6,
-      "totalReviews": 870,
-      "amazonLink": "https://www.amazon.com/Lenovo-ThinkPad-Carbon-Gen-9/dp/B09HXTDWZR/"
-
-  },
+  
   {
       "id": 9,
       "name": "Bose QuietComfort 45 Headphones",
@@ -148,56 +102,7 @@
       "totalReviews": 1340,
       "amazonLink": "https://www.amazon.com/Bose-QuietComfort-Wireless-Noise-Cancelling-Headphones/dp/B098FKXT8L/"
 
-  },
-  {
-      "id": 10,
-      "name": "Fitbit Versa 4",
-      "image": "https://s3.us-east-1.amazonaws.com/product-image-bucket-nz-prod-us/384237-Product-0-I-638240330278420821.jpg",
-      "additionalImages": [
-          "https://m.media-amazon.com/images/I/6162IS3ziJS._AC_UF1000,1000_QL80_.jpg",
-          "https://i5.walmartimages.com/asr/26443690-0f7d-4ad1-a0f9-ef7514c4a888.16e6929c5eec4bd709a2f845f627c202.jpeg",
-          "https://cdn.mos.cms.futurecdn.net/oM2y9PEms6Q83hkidjbnem.jpg"
-      ],
-      "price": 229.99,
-      "category": "Gadgets",
-      "description": "Fitness smartwatch with built-in GPS",
-      "rating": 6,
-      "totalReviews": 620,
-      "amazonLink": "https://www.amazon.com/Fitbit-Fitness-Smartwatch-readiness-exercise/dp/B0B4MWCXVQ/"
-
-  },
-  {
-      "id": 11,
-      "name": "OnePlus 9 Pro",
-      "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-1.jpg",
-      "additionalImages": [
-          "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-2.jpg",
-          "https://m.media-amazon.com/images/I/41Xv340qT5S._AC_SX679_.jpg"
-          
-      ],
-      "price": 969.99,
-      "category": "Mobile Phones",
-      "description": "High-end Android phone with fast charging",
-      "rating": 6,
-      "totalReviews": 750,
-      "amazonLink": "https://www.amazon.com/OnePlus-Morning-Wireless-Charging-5G-LE/dp/B07XM7WVS8/"
-
-  },
-  {
-      "id": 12,
-      "name": "ASUS ROG Zephyrus G14",
-      "amazonLink": "https://www.amazon.com/ASUS-ROG-Zephyrus-G14-Gaming/dp/B0BXHG51W6/",
-
-      "image": "https://m.media-amazon.com/images/I/81m-xYfxznL._AC_SX679_.jpg",
-      "additionalImages": [
-          "https://m.media-amazon.com/images/I/81lVFJi3LQL._AC_SX679_.jpg",
-          "https://m.media-amazon.com/images/I/71rbEY3i5wL._AC_SX679_.jpg",
-          "https://m.media-amazon.com/images/I/61g8-qIlt0L._AC_SX679_.jpg"
-      ],
-      "price": 1499.99,
-      "category": "Laptops",
-      "description": "Powerful gaming laptop in a compact form factor",
-      "rating": 6,
-      "totalReviews": 820
   }
+ 
+ 
 ]

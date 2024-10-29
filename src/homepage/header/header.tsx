@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import Banner from "../body/banner";
+import { motion } from "framer-motion";
 
 interface NavList {
   label: string;
@@ -14,7 +16,7 @@ const Header: React.FC = () => {
   const navList: NavList[] = [
     { label: "Home", to: "/" },
     { label: "Compare Prices", to: "product" },
-    { label: "Currency Converter", to: "/converter" },
+    // { label: "Currency Converter", to: "/converter" },
     // { label: "About Us", to: "about-us" },
     { label: "Contact Us", to: "contact-us" },
     // { label: "Track Deal", to: "/trackDeal" },
@@ -28,14 +30,42 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const headerVariants = {
+    initial: { y: -100 },
+    animate: { y: 0 },
+    transition: { type: "spring", stiffness: 100 }
+  };
+
+
+  const mobileMenuVariants = {
+    closed: { 
+      opacity: 0,
+      scale: 0.95,
+      transition: {
+        duration: 0.2
+      }
+    },
+    open: { 
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.2
+      }
+    }
+  };
+
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 mb-10 ${
+    <motion.header
+    initial="initial"
+    animate="animate"
+    variants={headerVariants}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 mb-10 ${
         isScrolled
-          ? "bg-white/80  backdrop-blur-md  shadow-lg lg:w-[60rem] w-full md:w[50rem] md:mx-auto lg:mx-auto rounded-full px-6 mt-6"
+          ? "md:bg-white/80  md:backdrop-blur-md  md:shadow-md md:w-[40rem] lg:w-[58rem] mx-auto w-full md:mx-auto  md:rounded-full md:px-6 md:mt-6"
           : "bg-transparent"
       }`}
     >
+           <div className={isScrolled ? 'hidden' : 'block'}> <Banner/></div>
       <nav className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-4 ">
         <Link to="/" className="font-bold text-lg lg:text-2xl">
           <span className="text-purpleCustom">Price</span>
@@ -43,7 +73,7 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 justify-center w-full">
           <ul className="flex items-center space-x-8">
             {navList.map((item, index) => (
               <li key={index} className="relative group">
@@ -57,26 +87,32 @@ const Header: React.FC = () => {
               </li>
             ))}
           </ul>
-          <Link
+          {/* <Link
             to="/signin"
             className="ml-4 rounded-md bg-purpleCustom px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purpleLight transition-all duration-300"
           >
             Sign-In
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden text-gray-700 hover:text-purpleCustom transition-colors duration-300"
+        <motion.button
+          whileTap={{ scale: 0.95 }}
+          className="md:hidden text-gray-700 hover:text-purpleCustom transition-colors duration-300"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        </motion.button>
       </nav>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-white shadow-lg">
+        <motion.nav 
+        initial="closed"
+            animate="open"
+            exit="closed"
+            variants={mobileMenuVariants}
+        className="lg:hidden bg-white shadow-lg">
           <ul className="flex flex-col items-center space-y-4 py-4">
             {navList.map((item, index) => (
               <li key={index}>
@@ -89,7 +125,7 @@ const Header: React.FC = () => {
                 </Link>
               </li>
             ))}
-            <li>
+            {/* <li>
               <Link
                 to="/signin"
                 className="rounded-md bg-purpleCustom px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purpleLight transition-all duration-300"
@@ -97,11 +133,11 @@ const Header: React.FC = () => {
               >
                 Sign-In
               </Link>
-            </li>
+            </li> */}
           </ul>
-        </div>
+        </motion.nav>
       )}
-    </header>
+    </motion.header>
   );
 };
 
