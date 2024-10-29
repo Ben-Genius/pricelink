@@ -1,6 +1,6 @@
 import {
   DollarSign,
-  Link as LinkIcon,
+  
   Globe,
   Bell,
   Mail,
