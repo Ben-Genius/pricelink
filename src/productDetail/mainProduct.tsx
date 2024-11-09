@@ -234,16 +234,13 @@ export default function ProductDetail() {
                     key={platform.name}
                     to={
                       platform.name === 'Amazon'
-                        ? `https://www.amazon.com/s?k=${encodeURIComponent(
-                            product.name
-                          )}`
+                        ? product.amazonLink
                         : platform.name === 'Ebay'
                         ? `https://www.ebay.com/sch/${encodeURIComponent(
                             product.name
                           )}`
                         : '#'
                     }
-                    target="_blank"
                     className="relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 w-full hover:shadow-xl transition duration-300"
                   >
                     <div>
