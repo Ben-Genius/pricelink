@@ -1,0 +1,108 @@
+[
+  {
+      "id": 1,
+      "name": "iPhone 13 Pro",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-1.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-3.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-4.jpg"
+      ],
+      "price": 495.99,
+      "category": "Mobile Phones",
+      "description": "High-end smartphone with advanced camera system",
+      "rating": 6,
+      "totalReviews": 1587,
+      "amazonLink":"https://www.amazon.com/Apple-iPhone-13-Pro-Sierra/dp/B09LPB9SQH?th=1&linkCode=ll1&tag=pricelinkk-20&linkId=b440fca88cc0f2b3c60cf30f9111511c&language=en_US&ref_=as_li_ss_tl"
+  },
+  {
+      "id": 2,
+      "name": "Samsung Galaxy S21",
+      "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-0.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-1.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-3.jpg"
+      ],
+      "price": 799.99,
+      "category": "Mobile Phones",
+      "description": "Flagship Android phone with 5G capabilities",
+      "rating": 6,
+      "totalReviews": 1420,
+      "amazonLink":"https://www.amazon.com/Samsung-Galaxy-S21-5G-Version/dp/B08VLMQ3KS?dib=eyJ2IjoiMSJ9.pieoa0trXvGJ6vDVcyVPXjo5OWWAewOR66Vo7N2TGc-MmkEbh3psacCs8Px_HkniTAPBA5SywMoreEE6FUp80ElpJ2EjtcNt_grOdLk7R-kQrKFDFZViPXe0CKNJ14loI1AEaagpEi6skK01LM_f3ZJOxN9nT-OwiHUZ2gc_vU09xeDGtK8MOCZLdWV1NZ_XUaQS3I7S6OfVH3q28W0U6F9HjgynpsJ9vR9RecU2624.Z7krUYU6t_E96YL77RxBYtmOGCEp8uRPYwM4IY55KCk&dib_tag=se&keywords=Samsung%2BGalaxy%2BS21&qid=1731134122&sr=8-1&th=1&linkCode=ll1&tag=pricelinkk-20&linkId=2a36454f815fe425c859ac580fd5604f&language=en_US&ref_=as_li_ss_tl"
+
+  },
+  {
+      "id": 3,
+      "name": "MacBook Pro 16-inch",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229",
+      "additionalImages": [
+ "https://www.apple.com/newsroom/images/tile-images/Apple_16-inch-MacBook-Pro_111319.jpg.landing-big_2x.jpg",
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-silver-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229",
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-mbp16-space-m1-2021?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1643239951000"
+        ],
+      "price": 2399.99,
+      "category": "Laptops",
+      "description": "Powerful laptop for professionals with large Retina display",
+      "rating": 6,
+      "totalReviews": 1255,
+      "amazonLink": "https://www.amazon.com/Apple-MacBook-Laptop-12%E2%80%91core-19%E2%80%91core/dp/B0BSHF7LLL?dib=eyJ2IjoiMSJ9.cKriR2xKRF5qdf2JMziuA9enPVyrj5ObTPsiiESi8oaCEIqXgkIL61GL9vajQ6vMJMpszs4doSasUW-GOqag2Wn4YxLEJDJkqdomBIuWS2Ip0Fi7bsn1-IPbZ_9jm5iXBc-ZlZ8gcKc7n6IRKC-TppsajBoF2LP1WZNC3zt8cENkHmgFaRul97QuH-bttprRlP0V0D2QJlCQwriPtEN1sEMIavc4ABe1XbOf2XiQQjM.PVg_BkkMiiC_hZGYvtuzhGxrBV__Bo2ML9Vc3nEx6hs&dib_tag=se&keywords=MacBook+Pro+16-inch&qid=1731134202&sr=8-4&linkCode=ll1&tag=pricelinkk-20&linkId=eb90ff5a6fc019b1ac77050e0ccea59a&language=en_US&ref_=as_li_ss_tl"
+
+  },
+
+  
+  {
+      "id": 6,
+      "name": "Apple Watch Series 7",
+      "image":"https://m.media-amazon.com/images/I/71aY6fOBaOL._AC_SX679_.jpg",
+      "additionalImages": [
+       "https://m.media-amazon.com/images/I/71qO1MR3HSL._AC_SX679_.jpg",
+       "https://m.media-amazon.com/images/I/81PComNMj1L._AC_SX679_.jpg",
+       "https://m.media-amazon.com/images/I/71RthGoxmJL._AC_SX679_.jpg"
+      ],
+      "price": 399.99,
+      "category": "Gadgets",
+      "description": "Advanced smartwatch with health monitoring features",
+      "rating": 4.5,
+      "totalReviews": 1120,
+      "amazonLink": "https://www.amazon.com/Apple-Watch-Midnight-Aluminum-Sport/dp/B09NWDXS13?dib=eyJ2IjoiMSJ9.4_EawcvxwWWk-3ojsvo9gIEBRcQHsjyrGUqbAA4U4FQlS8ReyET2OgPXoD20xcNvlBAX6_z4OJB95nfgOACwNM6Z4wD807tVks_XdVbc8Nw0mTYIJ3jQ8z1KKJ7EIom9D6rCWpn8Tg98AI5UHU5uoTIoKoOocHzVORAlsCaBcjrKK55txau4Ho5f6NTYyKVs2dmpOjNg1tYqhJerIHi4qF9X1Qx7Fc0z68gsE4AyS8A.uuIH4lW2pBk6uIBJfTP_YiBjYP31kRsEB9-CKYncJNo&dib_tag=se&keywords=Apple+Watch+Series+7&qid=1731134267&sr=8-4&linkCode=ll1&tag=pricelinkk-20&linkId=7c9c6d97aa8073dd47f06f66febc3645&language=en_US&ref_=as_li_ss_tl"
+
+  },
+  {
+      "id": 7,
+      "name": "Google Pixel 6",
+      "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-1.jpg",
+      "additionalImages": [
+          "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-2.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-3.jpg",
+          "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-6-4.jpg"
+      ],
+      "price": 699.99,
+      "category": "Mobile Phones",
+      "description": "Android phone with excellent camera capabilities",
+      "rating": 6,
+      "totalReviews": 960,
+      "amazonLink": "https://www.amazon.com/Google-Pixel-Unlocked-Smartphone-Ultrawide/dp/B09NP6697R?dib=eyJ2IjoiMSJ9.JstsUY6aSUh3nmSHMNiHufkh3kWX264OInnkTAd3iKpt3-gJc_LwoDcMHqYDMa7Uiz-rPpnoibJ_g56XBBTCDJJUH7jVDCLmf-oZyYMOHHHoYiXxOtVHXoKifVk0QPfOk5UjAKC1Ij1i9RD4qMxchfn8OI2bXaRKIc8TVYu3t6-EUYCGTc9b3DrqoIUXri_aQmbd3q3nuVj4qSLw-cboGgPGjWibzj5swWDqUOLvrXg.pQG1xZ_0fcP8qEwdkVqIRhXHqEzicjhJr3TqaZhOFks&dib_tag=se&keywords=Google+Pixel+6&qid=1731134414&sr=8-2&linkCode=ll1&tag=pricelinkk-20&linkId=5e4b155878a7234ce2c7cc937586829a&language=en_US&ref_=as_li_ss_tl"
+      
+  },
+  
+  {
+      "id": 9,
+      "name": "Bose QuietComfort 45 Headphones",
+      "image": "https://m.media-amazon.com/images/I/61Vu4iPFvYL._AC_SX679_.jpg",
+      "additionalImages": [
+          "https://m.media-amazon.com/images/I/61JY8Eci-LL._AC_SX679_.jpg",
+          "https://m.media-amazon.com/images/I/61sRChZHrrL._AC_SX679_.jpg",
+          "https://m.media-amazon.com/images/I/41tDxqmnybL._SP628,693,0%7C41n3pNmFrcL.jpg,4104k1RjVqL.jpg,41BMbv0Z1TL.jpg,41Exqy-2t-L.jpg,41O1ATtCcfL.jpg_.jpg"
+      ],
+      "price": 329.99,
+      "category": "Electronics",
+      "description": "Noise-cancelling headphones with exceptional sound quality",
+      "rating": 6,
+      "totalReviews": 1340,
+      "amazonLink": "https://www.amazon.com/s?k=Bose+QuietComfort+45+Headphones&linkCode=ll2&tag=pricelinkk-20&linkId=930c69691bcfeeb2d7abd6d4f624d6ee&language=en_US&ref_=as_li_ss_tl"
+
+  }
+ 
+ 
+]
